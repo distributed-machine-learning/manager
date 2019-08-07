@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+  spark-master:
+    image: mhatreabhay/spark-master
+    container_name: spark-master
+    hostname: spark-master
+    network_mode: host
+    ports:
+      - "8080:8080"
+      - "7077:7077"
+    volumes:
+       - /mnt/spark-apps:/opt/spark-apps
+       - /mnt/spark-data:/opt/spark-data
+    environment:
+      - "SPARK_LOCAL_IP=spark-master"
