@@ -10,7 +10,7 @@ Manager node for the cluster. Runs the following things:
 ## To run
 
 ```bash
-docker-compose -f worker/docker-compose.yml up
+docker-compose up
 ```
 
 That's it, now you have the manager node running.
