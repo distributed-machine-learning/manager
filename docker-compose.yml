@@ -14,3 +14,10 @@ services:
        - /mnt/spark-data:/opt/spark-data
     environment:
       - "SPARK_LOCAL_IP=spark-master"
+  
+  backend_app:
+    container_name: backend_app
+    hostname: backend_app
+    network_mode: host
+    ports:
+      - "3000:3000"
