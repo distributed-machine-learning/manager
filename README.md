@@ -7,10 +7,10 @@ Manager node for the cluster. Runs the following things:
 * Docker
 * Docker Compose
 
-## To run
-
+## To run the master and the app
+Simply run command
 ```bash
-docker-compose up
+sh ./run-master.sh
 ```
 
-That's it, now you have the manager node running.
+That's it, now you have the manager node and backend flask app running.
