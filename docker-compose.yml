@@ -14,11 +14,3 @@ services:
        - /mnt/spark-data:/opt/spark-data
     environment:
       - "SPARK_LOCAL_IP=spark-master"
-  
-  app:
-    container_name: app
-    image: app
-    hostname: app
-    network_mode: host
-    ports:
-      - "3000:3000"
